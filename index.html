@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hem Smile</title>
+
+    <!-- bootstrap link -->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Google font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- scroll animation -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+
+</head>
+
+<body>
+    <nav class="navbar" id="top-nav" data-aos="fade-down" data-aos-duration="1000">
+        <div class="logo">
+            <a href="index.html"><img loading="lazy" src="./images/logo(1)_PNG.png" alt=""></a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html" class="nav-link nav-link-ltr" >Home</a></li>
+                <li><a href="about.html" class="nav-link nav-link-ltr" >About us</a></li>
+                <li><a href="service.html" class="nav-link nav-link-ltr" >Services</a></li>
+                <li><a href="contact.html" class="nav-link nav-link-ltr" >Contact us</a></li>
+            </ul>
+        </div>
+        <div class="book" id="but1">
+            <button class="but" onclick="ena()">Book Appointment
+                <div>
+                    <img loading="lazy" src="./images-icons/arrow.png" alt="">
+                </div>
+            </button>
+        </div>
+
+        <!-- Menu button for mobile view -->
+
+        <div class="menu">
+            <button id="menuBtn"><img loading="lazy" src="./images-icons/menu-icon.png"
+                    onclick="openSidebar()"></button>
+        </div>
+    </nav>
+
+    <!-- Nav bar for mobile view -->
+    <div class="m-navbar" id="mob-navbar">
+        <ul>
+            <button class="close-btn" onclick="closeSidebar()">✖</button>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li>Book an appointment</li>
+        </ul>
+    </div>
+
+
+    <!-- hero section  -->
+
+    <section class="hero" data-aos="zoom-in-up" data-aos-duration="1500">
+        <div class="title">
+            <h1>Secure Your<span> Smile </span> with <h1 class="typewriter">
+                    <span id="typing"></span>
+                    <span class="cursor">|</span>
+                </h1>
+            </h1>
+            <p>Experience advanced, pain-free dental care delivered with precision, compassion, and modern technology.
+            </p>
+            <p><span class="smile">Smile Without Worry</span></p>
+
+
+
+
+            <div class="make">
+                <button class="but" onclick="ena()">Make an appointment
+                    <div>
+                        <img loading="lazy" src="./images-icons/arrow.png" alt="">
+                    </div>
+                </button>
+            </div>
+
+            <div class="rating">
+                <div class="star">
+                    <p>Google Rating <span>5.0</span></p>
+                    <ul>
+                        <li><img loading="lazy"
+                                src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000" alt="">
+                        </li>
+                        <li><img loading="lazy"
+                                src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000" alt="">
+                        </li>
+                        <li><img loading="lazy"
+                                src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000" alt="">
+                        </li>
+                        <li><img loading="lazy"
+                                src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000" alt="">
+                        </li>
+                        <li><img loading="lazy"
+                                src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <p>Based on 492 reviews</p>
+            </div>
+
+        </div>
+        <div class="h-img">
+            <img loading="lazy" src="./images/hero-img.png" alt="">
+            <div class="icon1"><img loading="lazy" src="./images-icons/dental-implant.png" alt=""></div>
+            <div class="icon2"><img loading="lazy" src="./images-icons/dental-insurance.png" alt=""></div>
+            <div class="icon3"><img loading="lazy" src="./images-icons/laser-beam.png" alt=""></div>
+
+            <div class="card">
+                <img loading="lazy" src="./images/dentist-icon.jpg" alt="" class="dentist-icon">
+                <div>
+                    <h5>Dr.K.Ramiah,BDS.,MS(<span>Italy</span>).,</h5>
+                    <p>Implantologist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Opening hours section  -->
+
+    <div class="open">
+        <div class="parent">
+            <div class="call">
+                <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-cta-phone.svg" alt="">
+                <div>
+                    <h3>Need a dental services?</h3>
+                    <h3>Call on : +91 96007 62033</h3>
+                </div>
+            </div>
+            <div class="hours">
+                <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-cta-time.svg">
+                <div class="open-tym">
+                    <!-- <h3>Opening Hours</h3> -->
+                    <h3>Morning :<span> 9:00AM to 1:00PM</span><br>
+                        Evening :<span> 5:00PM to 9:00PM</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="open-but">
+            <button class="but" onclick="ena()">Book Appointment
+                <div>
+                    <img loading="lazy" src="./images-icons/arrow.png" alt="">
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- About us section -->
+
+    <section class="about">
+        <div class="a-img" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+            <img loading="lazy" src="./images/CTF06477.JPG" alt="" class="img1">
+            <img loading="lazy" src="./images/vlcsnap-2025-12-27-13h07m55s579.png" alt="" class="img2">
+            <img loading="lazy" src="./images/about-img.jpg" alt="" class="img3">
+        </div>
+        <div class="a-title" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+            <p>ABOUT US</p>
+            <h2><span> Your Journey</span> to a Healthier Smile Begins Here</h2>
+            <h4 class="p">General dentistry and Oral Implantologist – HEM SMILE
+                DENTAL CARE Multispecialty dental clinic & implant Center ,
+                kovilpatti (2021 - present)</h4>
+            <div class="points">
+                <ul>
+                    <li><img loading="lazy" src="./images-icons/blue-tick.png" alt="">Experienced Team</li>
+                    <li><img loading="lazy" src="./images-icons/blue-tick.png" alt="">Comprehensive Services</li>
+                    <li><img loading="lazy" src="./images-icons/blue-tick.png" alt="">State-of-the-Art Technology</li>
+                    <li><img loading="lazy" src="./images-icons/blue-tick.png" alt="">Emergency Dental Services</li>
+                </ul>
+            </div>
+            <div class="o-but">
+                <a href="about.html">
+                    <button class="but">Read more About us
+                        <div>
+                            <img loading="lazy" src="./images-icons/arrow.png" alt="">
+                        </div>
+                    </button></a>
+            </div>
+        </div>
+    </section>
+    <!-- Aligners Brand section -->
+
+    <section class="aligners">
+
+        <h1>Your <span> Smile,</span> Powered by Premium Aligners</h1>
+        <div class="brands">
+            <div>
+                <img src="./LOGOS/mysmartalign(1).jpg" alt="">
+            </div>
+            <div>
+                <img src="./LOGOS/invisalign.png" alt="">
+            </div>
+            <div>
+                <img src="./LOGOS/dentcare(1).jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Service section -->
+    <section class="service">
+        <div class="s-title" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1500">
+            <p>OUR SERVICE</p>
+            <h1><span>High Quality</span> Services For You.</h1>
+            <p><span>We are committed to sustainability. eco-friendly initiatives.</span></p>
+        </div>
+        <div class="container">
+            <div class="cont1" data-aos="fade-up" data-aos-delay="400">
+                <img loading="lazy" src="./images-icons/root-canal.png" alt="">
+                <h3>Root Canel Treatment</h3>
+                <p>A procedure that removes infection inside the tooth and saves it from extraction.</p>
+            </div>
+            <div class="cont1" data-aos="fade-up" data-aos-delay="600">
+                <img loading="lazy" src="./images-icons/dental-implant.png" alt="">
+                <h3>Dental Implants</h3>
+                <p>A permanent replacement for missing teeth that looks and functions like natural teeth.</p>
+            </div>
+            <div class="cont1" data-aos="fade-up" data-aos-delay="800">
+                <img loading="lazy" src="./images-icons/happy.png" alt="">
+                <h3>Smile Designing</h3>
+                <p>A cosmetic dental treatment that enhances the appearance of your smile.</p>
+            </div>
+            <div class="cont1" data-aos="fade-up" data-aos-delay="1000">
+                <img loading="lazy" src="./images-icons/tooth.png" alt="">
+                <h3>Kids Dentistry</h3>
+                <p>Gentle dental care specially designed to protect and maintain children’s oral health.</p>
+            </div>
+            <div class="cont1" data-aos="fade-up" data-aos-delay="1000">
+                <img loading="lazy" src="./images-icons/bridge.png" alt="">
+                <h3>Dental Bridge</h3>
+                <p>A fixed restoration used to replace one or more missing teeth and restore your smile.</p>
+            </div>
+            <div class="cont1" data-aos="fade-up" data-aos-delay="1000">
+                <img loading="lazy" src="./images-icons/denture.png" alt="">
+                <h3>BPS Denture</h3>
+                <p>Removable artificial teeth designed to replace missing teeth and restore chewing and appearance.</p>
+            </div>
+            <div class="cont1" data-aos="fade-up" data-aos-delay="1000">
+                <img loading="lazy" src="./images-icons/tooth-filling.png" alt="">
+                <h3>Tooth Filling</h3>
+                <p>A treatment that repairs cavities and restores the strength and shape of a damaged tooth.</p>
+            </div>
+            <div class="cont1" data-aos="fade-up" data-aos-delay="1000">
+                <img loading="lazy" src="./images-icons/braces.png" alt="">
+                <h3>Orthodontic-Treatment</h3>
+                <p>Treatments like braces or aligners that straighten teeth and correct bite problems.</p>
+            </div>
+            <div class="cont1" data-aos="fade-up" data-aos-delay="1000">
+                <img loading="lazy" src="./images-icons/tooth-extraction.png" alt="">
+                <h3>Tooth Extraction</h3>
+                <p>A safe procedure to remove severely damaged or infected teeth when necessary.</p>
+            </div>
+            <div class="cont1" data-aos="fade-up" data-aos-delay="1000">
+                <img loading="lazy" src="./images-icons/x-ray.png" alt="">
+                <h3>Denatl X-ray</h3>
+                <p>Imaging technology that helps detect hidden dental problems in teeth and jaw.</p>
+            </div>
+        </div>
+        <div class="s-bottom">
+            <p>We believe in using the latest technology and techniques to ensure the best outcomes for our patients.
+            </p>
+
+            <div class="s-but" data-aos="fade-up" data-aos-duration="1500">
+                <a href="service.html">
+                    <button class="but">View All Service
+                        <div>
+                            <img loading="lazy" src="./images-icons/arrow.png" alt="">
+                        </div>
+                    </button></a>
+            </div>
+    </section>
+
+
+    <!-- Play video section -->
+    <section class="play-parent">
+        <div class="play" ::before>
+            <div class="p-title">
+                <!-- <p>VISIT CLINIC</p>
+                <h1>Comprehensive Dental Care For All Ages</h1> -->
+                <p>The goal of our clinic is to provide friendly, caring dentistry and the highest level of general,
+                    cosmetic, and specialist dental treatments. With dental practices throughout the world </p>
+            </div>
+            <!-- <div class="p-but">
+                <a href="service.html">
+                    <button class="but">View All Service
+                        <div>
+                            <img loading="lazy" src="./images-icons/arrow.png" alt="">
+                        </div>
+                    </button></a>
+            </div> -->
+        </div>
+    </section>
+
+
+    <!-- Choose us section -->
+
+    <section class="choose">
+        <div class="c-title" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500">
+            <p>OUR EXPERTISE IN</p>
+            <h1><span>DENTAL </span> IMPLANT</h1>
+            <p><span>Restoring smiles with world-class implant technology and precision care</span></p>
+        </div>
+        <div class="main-cont">
+            <div class="container-left" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500">
+                <div class="c-1" id="left-cont-1">
+                    <div>
+                        <h2>5+ Years of Implant Excellence</h2>
+                        <p>Advanced implant care with over five years of proven clinical experience.</p>
+                    </div>
+                    <div><img loading="lazy" src="./images-icons/dentist.png" alt=""></div>
+                </div>
+                <div class="c-1" id="left-cont-2">
+                    <div>
+                        <h2>Precision Implant Expertise</h2>
+                        <p>Focused on immediate implants, tissue management, and guided surgical precision.</p>
+                    </div>
+                    <div><img loading="lazy" src="./images-icons/dental-service.png" alt=""></div>
+                </div>
+                <div class="c-1" id="left-cont-3">
+                    <div>
+                        <h2>Advanced Digital Implantology</h2>
+                        <p>Expert in CBCT-guided planning and 3D implant placement for precise, long-lasting results.
+                        </p>
+                    </div>
+                    <div><img loading="lazy" src="./images-icons/dental-technology.png" alt=""></div>
+                </div>
+            </div>
+            <!-- "https://html.awaikenthemes.com/dentaire/images/why-choose-us-img.png -->
+            <div class="teeth-img" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
+                <img loading="lazy" src="./LOGOS/teeth-removebg-preview.png" alt="">
+            </div>
+            <div class="container-right" data-aos="fade-down" data-aos-duration="1500">
+                <div class="c-2" id="right-cont-1">
+                    <div>
+                        <img loading="lazy" src="./images-icons/records.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Proven Implant Expertise</h2>
+                        <p>Over 330 implants placed, including single and full-arch restorations, with personalized
+                            follow-up.</p>
+                    </div>
+                </div>
+                <div class="c-2" id="right-cont-2">
+                    <div>
+                        <img loading="lazy" src="./images-icons/dental-implant (1).png" alt="">
+                    </div>
+                    <div>
+                        <h2>All-on-4 & All-on-6 Expertise</h2>
+                        <p>Full-mouth rehabilitation using All-on-4 and All-on-6 implant concepts.</p>
+                    </div>
+                </div>
+                <div class="c-2" id="right-cont-3">
+                    <div>
+                        <img loading="lazy" src="./images-icons/implant.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Single & Multiple Tooth Implants</h2>
+                        <p>Skilled in single and multiple tooth implant placements in both anterior and posterior zones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acheivement and counts -->
+    <section class="poster-section" id="stats-section">
+        <div class="poster">
+            <div class="pos1" data-aos="fade-up" data-aos-duration="1000">
+                <div class="stats">
+                    <h1 class="counter" data-target="4">0</h1>
+                    <h2>Years of Experience</h2>
+                </div>
+                <p>Over five years of specialized expertise in dental implantology</p>
+            </div>
+            <div class="pos1" data-aos="fade-up" data-aos-duration="1200">
+                <div class="stats">
+                    <h1 class="counter" data-target="3500" data-plus="true">0</h1>
+                    <h2>Happy Smiles</h2>
+                </div>
+                <p>Delivered 3,500+ confident smiles with expert dental care</p>
+            </div>
+            <div class="pos1" data-aos="fade-down" data-aos-duration="1100">
+                <div class="stats">
+                    <h1 class="counter" data-target="30000">0</h1 >
+                    <h2>Consultation</h2>
+                </div>
+                <p>Delivered 30,000+ consultations, helping patients achieve confident, lasting smiles</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team members section -->
+
+    <section class="team">
+        <div class="t-title" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
+            <p>OUR TEAM</p>
+            <h1><span>Our Friendly</span> Dentists Team</h1>
+            <p><span> We are committed to sustainability. eco-friendly initiatives.</span></p>
+        </div>
+        <div class="t-containers">
+            <div class="t-1" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-img">
+                    <img loading="lazy" src="./Team/doc4.png" alt="">
+                </div>
+                <div class="name">
+                    <h2>Dr.P.N.Gopinath,BDS.,MDS.,PGCOI,</h2>
+                    <p>Oral and Maxillofacial Surgeon</p>
+                </div>
+            </div>
+            <div class="t-1" data-aos="fade-up" data-aos-delay="600">
+                <div class="team-img">
+                    <img loading="lazy" src="./Team/doc5.jpg" alt="">
+                </div>
+                <div class="name">
+                    <h2>Dr.N.Prithvi Sankar,BDS.,MDS,</h2>
+                    <p>Orthodontist</p>
+                </div>
+            </div>
+            <div class="t-1" id="t3" data-aos="fade-up" data-aos-delay="800">
+                <div class="team-img">
+                    <img loading="lazy" src="./Team/doc1.png" alt="">
+                </div>
+                <div class="name">
+                    <h2>Dr.S.Gobala Krishnan,BDS.,MDS,</h2>
+                    <p>Oral and Maxillofacial Surgeon</p>
+                </div>
+            </div>
+            <div class="t-1" id="t4" data-aos="fade-up" data-aos-delay="1000">
+                <div class="team-img">
+                    <img loading="lazy" src="./Team/doc3.png" alt="">
+                </div>
+                <div class="name">
+                    <h2>Dr.V.Nagarajan,BDS.,MDS,</h2>
+                    <p>Endodontist</p>
+                </div>
+            </div>
+            <div class="t-1" id="t5" data-aos="fade-up" data-aos-delay="1000">
+                <div class="team-img">
+                    <!--"https://html.awaikenthemes.com/dentaire/images/team-4.jpg https://html.awaikenthemes.com/dentaire/images/team-3.jpg -->
+                    <img loading="lazy" src="./Team/doc2.png" alt="">
+                </div>
+                <div class="name">
+                    <h2>Dr.Divakar Srinivasan,BDS.,MDS,</h2>
+                    <p>Root Canel Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial section -->
+
+    <section class="test">
+
+        <div class="test-title" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
+            <p>Testimonial</p>
+            <h1><span>What Our</span> Client Say</h1>
+            <p><span>We are committed to sustainability. eco-friendly initiatives.</span></p>
+        </div>
+        <section class="test-child">
+            <div class="test-img" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                <div class="test-img-main">
+                    <img loading="lazy" src="./images/testimonial-img.jpg" alt="">
+                </div>
+                <!-- <div class="rate-cont"> <!- Parent of rating container ->
+                    <div class="test-rate">
+                        <h1>4.9/5</h1>
+                        <p>This rate is given by user after visiting our location</p>
+                    </div>
+                    <div class="test-star">
+                        <ul>
+                            <li><img loading="lazy"
+                                    src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000"
+                                    alt=""></li>
+                            <li><img loading="lazy"
+                                    src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000"
+                                    alt=""></li>
+                            <li><img loading="lazy"
+                                    src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000"
+                                    alt=""></li>
+                            <li><img loading="lazy"
+                                    src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000"
+                                    alt=""></li>
+                            <li><img loading="lazy"
+                                    src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000"
+                                    alt=""> </li>
+                        </ul>
+                        <p>For Excellence Services</p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="test-feed" data-aos="fade-left" data-aos-duration="1500">
+                <div class="slides">
+                    <div class="slide">
+                        <div>
+                            <img loading="lazy"
+                                src="https://html.awaikenthemes.com/dentaire/images/icon-testimonial-quote.svg" alt="">
+                        </div>
+                        <div class="feed">
+                            <p>"I recently visited Hem Smile Dental Care two weeks ago for treatment of cavities on both
+                                the right and left sides of my mouth. The doctor suggested a root canal treatment, and I
+                                decided to go ahead with it. The entire procedure was done very professionally — first,
+                                the cavities were carefully removed, and then crowns were fixed perfectly on both sides.
+                                <br>
+                                Now everything feels absolutely perfect! I’m completely satisfied with the treatment and
+                                the care provided. The doctor and staff were very friendly, patient, and explained each
+                                step clearly. I highly recommend Hem Smile Dental Care to anyone looking for a
+                                trustworthy and skilled dental clinic.
+                                ."
+                            </p>
+                        </div>
+                        <div class="f-cont">
+                            <!-- <img loading="lazy" src="	https://html.awaikenthemes.com/dentaire/images/author-3.jpg"
+                                alt=""> -->
+                            <div>
+                                <h2>Christopher Cj</h2>
+                                <p>3 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide" data-bs-interval="3000">
+                        <div>
+                            <img loading="lazy"
+                                src="https://html.awaikenthemes.com/dentaire/images/icon-testimonial-quote.svg" alt="">
+                        </div>
+                        <div class="feed">
+                            <p>"Exceptional dental treatment with expert care and precision! The doctors made me feel
+                                completely at ease, and the procedure was quick and painless. Truly outstanding service
+                                from start to finish!❤️"</p>
+                        </div>
+                        <div class="f-cont">
+                            <!-- <img loading="lazy" src="	https://html.awaikenthemes.com/dentaire/images/author-3.jpg"
+                                alt=""> -->
+                            <div>
+                                <h2>Jeevarajan</h2>
+                                <p>10 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-bs-interval="3000">
+                        <div>
+                            <img loading="lazy"
+                                src="https://html.awaikenthemes.com/dentaire/images/icon-testimonial-quote.svg" alt="">
+                        </div>
+                        <div class="feed">
+                            <p>"Friendly approach with smiling face.
+                                Explaining the cause of the problem in detail
+                                comfortable feeling
+                                Reasonable consultation/treatment fees
+                                "</p>
+                        </div>
+                        <div class="f-cont">
+                            <!-- <img loading="lazy" src="	https://html.awaikenthemes.com/dentaire/images/author-3.jpg"
+                                alt=""> -->
+                            <div>
+                                <h2>Murugan Chelliah</h2>
+                                <p>5 years ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-bs-interval="3000">
+                        <div>
+                            <img loading="lazy"
+                                src="https://html.awaikenthemes.com/dentaire/images/icon-testimonial-quote.svg" alt="">
+                        </div>
+                        <div class="feed">
+                            <p>"I had an excellent experience at Dr. Ramiah’s dental clinic. The clinic is clean,
+                                well-equipped, and the staff are friendly and professional. Dr. Ramiah took the time to
+                                explain the treatment clearly and made sure I was comfortable throughout the procedure.
+                                His gentle approach and attention to detail really put me at ease. I’m very happy with
+                                the results and would highly recommend this clinic to anyone looking for quality dental
+                                care"</p>
+                        </div>
+                        <div class="f-cont">
+                            <!-- <img loading="lazy" src="	https://html.awaikenthemes.com/dentaire/images/author-3.jpg"
+                                alt=""> -->
+                            <div>
+                                <h2>Anugraha Nagaraj</h2>
+                                <p>6 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-bs-interval="3000">
+                        <div>
+                            <img loading="lazy"
+                                src="https://html.awaikenthemes.com/dentaire/images/icon-testimonial-quote.svg" alt="">
+                        </div>
+                        <div class="feed">
+                            <p>"Great Experience – Wisdom Teeth Removal
+                                I had my wisdom tooth removed recently, and everything went really well. The
+                                doctor(Ramiah), surgeon and staff were very nice and made me feel comfortable.
+                                For my second teeth removal they used best equipment ,The oral surgeon used the best
+                                motor for the extraction, explained everything clearly and made sure I felt comfortable
+                                which made the procedure incredibly smooth and efficient. I barely felt a thing, and
+                                everything was done much quicker than I expected.
+                                I Would definitely recommend this place to others
+                                "</p>
+                        </div>
+                        <div class="f-cont">
+                            <!-- <img loading="lazy" src="	https://html.awaikenthemes.com/dentaire/images/author-3.jpg"
+                                alt=""> -->
+                            <div>
+                                <h2>Vijayalakshmi Prabakaran</h2>
+                                <p>8 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-bs-interval="3000">
+                        <div>
+                            <img loading="lazy"
+                                src="https://html.awaikenthemes.com/dentaire/images/icon-testimonial-quote.svg" alt="">
+                        </div>
+                        <div class="feed">
+                            <p>"Dr.K Ramiah was incredibly [kind, patient, knowledgeable], explained everything clearly,
+                                and made sure I felt comfortable throughout the procedure. I also appreciated how he
+                                took the time to answer my questions."</p>
+                        </div>
+                        <div class="f-cont">
+                            <!-- <img loading="lazy" src="	https://html.awaikenthemes.com/dentaire/images/author-3.jpg"
+                                alt=""> -->
+                            <div>
+                                <h2>Sujith Vergin Sujith Vergin</h2>
+                                <p>10 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" data-bs-interval="3000">
+                        <div>
+                            <img loading="lazy"
+                                src="https://html.awaikenthemes.com/dentaire/images/icon-testimonial-quote.svg" alt="">
+                        </div>
+                        <div class="feed">
+                            <p>"I personally recommend this doctor. We came here to close the gap in teeth for my son.
+                                My son got cured well and no more toothache. Doctor and staff are so kind."</p>
+                        </div>
+                        <div class="f-cont">
+                            <!-- <img loading="lazy" src="	https://html.awaikenthemes.com/dentaire/images/author-3.jpg"
+                                alt=""> -->
+                            <div>
+                                <h2>Sankar Ayyanar</h2>
+                                <p>a year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-but">
+                    <button class="prev-test" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <img loading="lazy" src="./images-icons/left-arrow.png" alt=""></button>
+                    <button class="next-test" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <img loading="lazy" src="./images-icons/right-arrow.png" alt=""></button>
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Brand section -->
+    <section class="collob-brand">
+        <div>
+            <h1>Trusted <span>Brands</span> We Use for <span>Your Care</span></h1>
+        </div>
+        <div class="brand-grid-parent">
+            <div class="brand-grid">
+                <img src="./LOGOS/3m.png" alt="">
+            </div>
+            <div class="brand-grid">
+                <img src="./LOGOS/bioline.png" alt="">
+            </div>
+            <div class="brand-grid">
+                <img src="./LOGOS/dentcare(1).jpg" alt="">
+            </div>
+            <div class="brand-grid">
+                <img src="./LOGOS/dio_implant_logo.jpg" alt="">
+            </div>
+            <div class="brand-grid">
+                <img src="./LOGOS/gc.jpg" alt="">
+            </div>
+            <div class="brand-grid">
+                <img src="./LOGOS/invisalign.png" alt="">
+            </div>
+            <div class="brand-grid">
+                <img src="./LOGOS/mysmartalign(1).jpg" alt="">
+            </div>
+            <div class="brand-grid">
+                <img src="./LOGOS/ivoclar.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Map section -->
+
+    <section class="map" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600">
+        <div class="m-link">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.8447216824234!2d77.87352947314591!3d9.177418686651892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06b34f8d8838e7%3A0xfa08b1c790b8aa74!2sHem%20Smile%20Dental%20Care.%20Multi-speciality%20dental%20clinic%20%26%20lmplant%20center!5e1!3m2!1sen!2sin!4v1771842552178!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="m-title">
+            <p>CONTACT NOW</p>
+            <h1>Get <span>Professional</span> Consultation</h1>
+            <div class="info-parent">
+                <div class="m1">
+                    <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-location.svg" alt="">
+                    <p>K.E.S Complex(1st Floor), Kadalaiyur Main Rd,<br> Jon Bosco School Opp ,Kovilpatti-628501.</p>
+                </div>
+                <div class="m1">
+                    <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-phone.svg" alt="">
+                    <p>+91 96007 62033</p>
+                </div>
+                <div class="m1">
+                    <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-mail.svg" alt="">
+                    <p>info@domain.com</p>
+                </div>
+                <div class="m1">
+                    <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-clock.svg" alt="">
+                    <p>Morning : 9:00AM to 1:00PM <br>
+                        Evening : 5:00PM to 9:00PM</p>
+                </div>
+            </div>
+            <div class="s-but">
+                <button class="but" onclick="ena()">Make Appointment
+                    <div>
+                        <img loading="lazy" src="./images-icons/arrow.png" alt="">
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
+        <div class="f-parent">
+            <div class="child-logo">
+                <img loading="lazy" src="./images/logobg(1).png" alt="">
+                <p>The goal our clinic is provide friendly, caring dentistry and highest level of general, cosmetic, and
+                    specialist dental treatments.</p>
+            </div>
+            <div class="child-links">
+                <div class="child-cont">
+                    <div>
+                        <p>Quick Links</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="contact.html">Book Appointment</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="child-cont">
+                    <div>
+                        <p>Others</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="policy.html">Privacy & Policy</a></li>
+                            <li><a href="terms.html">Terms&Conditions</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="child-cont" id="getin">
+                    <div>
+                        <p>Get In Touch</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="tel:8765432100"><img loading="lazy" src="./images-icons/call.png" alt="">+91
+                                    96007 62033</a>
+                            </li>
+                            <li><a href="mailto:vasanth@gmail.com"><img loading="lazy" src="./images-icons/mail.png"
+                                        alt="">hemsmiledentalcare@gmail.com</a></li>
+                            <li><img loading="lazy" src="./images-icons/location.png" alt="">K.E.S Complex(1st Floor),
+                                Kadalaiyur Main Rd,<br> Jon Bosco School Opp ,Kovilpatti-628501.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2026 All Rights Reserved.</p>
+            <p>Developed by CTF</p>
+        </div>
+    </footer>
+
+    <a href="#top-nav">
+        <div class="up-arrow">
+            <img loading="lazy" src="./images-icons/arrow-down-sign-to-navigate.png" alt="">
+        </div>
+    </a>
+
+    <!-- POP UP SECTION -->
+    <section class="popup-parent" id="popup-parent-f">
+        <div class="popup" id="popup">
+            <div class="popup-child2">
+                <img loading="lazy" src="./images-icons/Gemini_Generated_Image_jyhnhhjyhnhhjyhn.png" alt="">
+            </div>
+            <div class="popup-child">
+                <form action="" id="myForm" method="post">
+                    <div class="pop-close">
+                        <h1>Book An Appointment</h1>
+                        <button onclick="finish()"><img loading="lazy" src="./images-icons/icons8-close-30.png"
+                                width="20px">
+                        </button>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Your Name</p>
+                        <input type="text" placeholder="Eg:Vasanth" name="name" required>
+                        <!-- <img loading="lazy" src="./images-icons/icons8-user-32.png" alt="" class="p-icon"> -->
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Phone no</p>
+                        <input type="tel" placeholder="Eg:1234567890" name="number" maxlength="10" required>
+                        <!-- <span><img loading="lazy" src="./images-icons/icons8-call-48.png" alt="" class="p-icon"></span> -->
+                    </div>
+
+                    <div class="input-cont-1">
+                        <p>Any Message</p>
+                        <textarea rows="4" placeholder="Eg:Message" name="message"></textarea>
+                        <!-- <span><img loading="lazy" src="./images-icons/icons8-message-32.png" alt="" class="p-icon"></span> -->
+                    </div>
+                    <div class="input-cont-2">
+                        <p>Select your date</p>
+                        <input type="date" name="date" required>
+                        <span><img loading="lazy" src="" class="p-icon"></span>
+                    </div>
+                    <div class="pop-button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Floting icons -->
+    <div class="float-icon whatsapp">
+        <img loading="lazy" src="./images-icons/whatsapp (1).png" alt="">
+        <a href=""><img loading="lazy" src="./images-icons/forward.png" alt="">
+        </a>
+    </div>
+    <div class="float-icon mail">
+        <img loading="lazy" src="./images-icons/mail(1).png" alt="">
+        <a href=""><img loading="lazy" src="./images-icons/forward.png" alt=""></a>
+    </div>
+    <div class="float-icon phone">
+        <img loading="lazy" src="./images-icons/telephone.png" alt="">
+        <a href=""><img loading="lazy" src="./images-icons/forward.png" alt="">
+        </a>
+    </div>
+    <div id="overlay" onclick="closeSidebar()"></div>
+</body>
+<script src="script.js"></script>
+
+</html>
