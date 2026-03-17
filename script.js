@@ -5,22 +5,41 @@ const menuBtn = document.getElementById("menuBtn");
 const exit = document.getElementById("overlay");
 
 function openSidebar() {
-  sidebar.style.left = "0px";
+  sidebar.style.right = "0px";
   exit.classList.add("show");
+  
 }
 function closeSidebar() {
-  sidebar.style.left = "-1000px";
+  sidebar.style.right = "-1000px";
   exit.classList.remove("show");
 }
 
 var p = document.getElementById("popup-parent-f");
+var wapp = document.querySelector(".whatsapp");
+var mapp = document.querySelector(".mail");
+var capp = document.querySelector(".phone");
+
 
 function ena() {
   p.style.display = "flex";
+  wapp.style.zIndex = "-10";
+  mapp.style.zIndex = "-10";
+  capp.style.zIndex = "-10";
 }
 
 function finish() {
   p.style.display = "none";
+  wapp.style.zIndex="1";
+  mapp.style.zIndex="1";
+  capp.style.zIndex="1";
+}
+function openModal() {
+  
+}
+
+function closeModal() {
+  document.querySelector('.popup').style.display = 'none';
+  document.querySelector('.floating-icons').classList.remove('hide-icons');
 }
 
 // Type writer effect
@@ -323,4 +342,14 @@ const observer = new IntersectionObserver(entries => {
 counters.forEach(counter=>{
   observer.observe(counter);
   
+});
+const icons = document.querySelectorAll('.icon1');
+
+icons.forEach(icon => {
+  icon.addEventListener('mouseenter', () => {
+    icon.style.animationPlayState = 'paused'; // pause float on hover
+  });
+  icon.addEventListener('mouseleave', () => {
+    icon.style.animationPlayState = 'running';
+  });
 });
