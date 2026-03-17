@@ -38,10 +38,10 @@
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="index.html" class="nav-link nav-link-ltr" >Home</a></li>
-                <li><a href="about.html" class="nav-link nav-link-ltr" >About us</a></li>
-                <li><a href="service.html" class="nav-link nav-link-ltr" >Services</a></li>
-                <li><a href="contact.html" class="nav-link nav-link-ltr" >Contact us</a></li>
+                <li><a href="index.html" class="nav-link nav-link-ltr">Home</a></li>
+                <li><a href="about.html" class="nav-link nav-link-ltr">About us</a></li>
+                <li><a href="service.html" class="nav-link nav-link-ltr">Services</a></li>
+                <li><a href="contact.html" class="nav-link nav-link-ltr">Contact us</a></li>
             </ul>
         </div>
         <div class="book" id="but1">
@@ -62,14 +62,27 @@
 
     <!-- Nav bar for mobile view -->
     <div class="m-navbar" id="mob-navbar">
+        <div>
         <ul>
-            <button class="close-btn" onclick="closeSidebar()">✖</button>
+            <button class="close-btn" onclick="closeSidebar()"><img src="./images-icons/close (2).png" width="25px">
+            </button>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="service.html">Services</a></li>
             <li><a href="contact.html">Contact us</a></li>
-            <li>Book an appointment</li>
+            <li><button  onclick="ena()" >Book an appointment</button></li>
         </ul>
+        </div>
+        <div class="m-navbar-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.8447216824234!2d77.87352947314591!3d9.177418686651892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06b34f8d8838e7%3A0xfa08b1c790b8aa74!2sHem%20Smile%20Dental%20Care.%20Multi-speciality%20dental%20clinic%20%26%20lmplant%20center!5e1!3m2!1sen!2sin!4v1771842552178!5m2!1sen!2sin"
+                style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="m-navbar-social-icons" >
+             <img src="./images-icons/whatsapp (3).png" alt="" >
+             <img src="./images-icons/instagram (2).png" alt="" >
+             <img src="./images-icons/facebook (2).png" alt="" >
+        </div>
     </div>
 
 
@@ -86,9 +99,6 @@
             </p>
             <p><span class="smile">Smile Without Worry</span></p>
 
-
-
-
             <div class="make">
                 <button class="but" onclick="ena()">Make an appointment
                     <div>
@@ -99,7 +109,10 @@
 
             <div class="rating">
                 <div class="star">
-                    <p>Google Rating <span>5.0</span></p>
+                    <div style="display: flex; gap: 5px; align-items: center;">
+                        <p>Google Rating <span>5.0</span></p> <img src="./images-icons/verified.png" alt=""
+                            width="20px">
+                    </div>
                     <ul>
                         <li><img loading="lazy"
                                 src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000" alt="">
@@ -124,9 +137,9 @@
         </div>
         <div class="h-img">
             <img loading="lazy" src="./images/hero-img.png" alt="">
-            <div class="icon1"><img loading="lazy" src="./images-icons/dental-implant.png" alt=""></div>
-            <div class="icon2"><img loading="lazy" src="./images-icons/dental-insurance.png" alt=""></div>
-            <div class="icon3"><img loading="lazy" src="./images-icons/laser-beam.png" alt=""></div>
+            <div class="icon1 float"><img loading="lazy" src="./images-icons/dental-implant.png" alt=""></div>
+            <div class="icon2 float"><img loading="lazy" src="./images-icons/dental-insurance.png" alt=""></div>
+            <div class="icon3 float"><img loading="lazy" src="./images-icons/laser-beam.png" alt=""></div>
 
             <div class="card">
                 <img loading="lazy" src="./images/dentist-icon.jpg" alt="" class="dentist-icon">
@@ -213,6 +226,15 @@
                 <img src="./LOGOS/invisalign.png" alt="">
             </div>
             <div>
+                <img src="./LOGOS/dentcare(1).jpg" alt="">
+            </div>
+            <div class="dup">
+                <img src="./LOGOS/mysmartalign(1).jpg" alt="">
+            </div>
+            <div class="dup">
+                <img src="./LOGOS/invisalign.png" alt="">
+            </div>
+            <div class="dup">
                 <img src="./LOGOS/dentcare(1).jpg" alt="">
             </div>
         </div>
@@ -404,7 +426,7 @@
             </div>
             <div class="pos1" data-aos="fade-down" data-aos-duration="1100">
                 <div class="stats">
-                    <h1 class="counter" data-target="30000">0</h1 >
+                    <h1 class="counter" data-target="30000">0</h1>
                     <h2>Consultation</h2>
                 </div>
                 <p>Delivered 30,000+ consultations, helping patients achieve confident, lasting smiles</p>
@@ -483,7 +505,7 @@
         <section class="test-child">
             <div class="test-img" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
                 <div class="test-img-main">
-                    <img loading="lazy" src="./images/testimonial-img.jpg" alt="">
+                    <img loading="lazy" src="./images/CTF06477.JPG" alt="">
                 </div>
                 <!-- <div class="rate-cont"> <!- Parent of rating container ->
                     <div class="test-rate">
@@ -710,6 +732,30 @@
             <div class="brand-grid">
                 <img src="./LOGOS/ivoclar.png" alt="">
             </div>
+            <div class="brand-grid dup">
+                <img src="./LOGOS/3m.png" alt="">
+            </div>
+            <div class="brand-grid dup">
+                <img src="./LOGOS/bioline.png" alt="">
+            </div>
+            <div class="brand-grid dup">
+                <img src="./LOGOS/dentcare(1).jpg" alt="">
+            </div>
+            <div class="brand-grid dup">
+                <img src="./LOGOS/dio_implant_logo.jpg" alt="">
+            </div>
+            <div class="brand-grid dup">
+                <img src="./LOGOS/gc.jpg" alt="">
+            </div>
+            <div class="brand-grid dup">
+                <img src="./LOGOS/invisalign.png" alt="">
+            </div>
+            <div class="brand-grid dup">
+                <img src="./LOGOS/mysmartalign(1).jpg" alt="">
+            </div>
+            <div class="brand-grid dup">
+                <img src="./LOGOS/ivoclar.png" alt="">
+            </div>
         </div>
     </section>
 
@@ -762,6 +808,11 @@
                 <img loading="lazy" src="./images/logobg(1).png" alt="">
                 <p>The goal our clinic is provide friendly, caring dentistry and highest level of general, cosmetic, and
                     specialist dental treatments.</p>
+                <div class="footer-social-icons" >
+                    <img src="./images-icons/whatsapp (3).png" alt="" >
+                    <img src="./images-icons/instagram (2).png" alt="" >
+                    <img src="./images-icons/facebook (2).png" alt="" >
+                </div>
             </div>
             <div class="child-links">
                 <div class="child-cont">
@@ -850,7 +901,7 @@
                         <!-- <span><img loading="lazy" src="./images-icons/icons8-message-32.png" alt="" class="p-icon"></span> -->
                     </div>
                     <div class="input-cont-2">
-                        <p>Select your date</p>
+                        <p>Appointment date</p>
                         <input type="date" name="date" required>
                         <span><img loading="lazy" src="" class="p-icon"></span>
                     </div>
@@ -862,21 +913,18 @@
         </div>
     </section>
     <!-- Floting icons -->
-    <div class="float-icon whatsapp">
-        <img loading="lazy" src="./images-icons/whatsapp (1).png" alt="">
-        <a href=""><img loading="lazy" src="./images-icons/forward.png" alt="">
-        </a>
+    <div class="float-icon whatsapp" >
+        <img loading="lazy" src="./images-icons/whatsapp (3).png" alt="">
+        <a href=""><p>Whatsapp now</p></a>
     </div>
     <div class="float-icon mail">
         <img loading="lazy" src="./images-icons/mail(1).png" alt="">
-        <a href=""><img loading="lazy" src="./images-icons/forward.png" alt=""></a>
-    </div>
+        <a href="mailto:marivasanth.ctf@gmail.com"><p>Mail us</p></a></div>
     <div class="float-icon phone">
         <img loading="lazy" src="./images-icons/telephone.png" alt="">
-        <a href=""><img loading="lazy" src="./images-icons/forward.png" alt="">
-        </a>
+        <a href=""><p>Call now</p></a>
     </div>
-    <div id="overlay" onclick="closeSidebar()"></div>
+    <!-- <div id="overlay" onclick="closeSidebar()"></div> -->
 </body>
 <script src="script.js"></script>
 
